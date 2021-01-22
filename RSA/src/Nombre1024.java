@@ -217,7 +217,7 @@ public class Nombre1024 {
 		for(int i=this.taille-1; i>diff  ; i--) {
 			if (this.Nombre[i]>=N1.Nombre[i-diff]) Result.Nombre[i]= this.Nombre[i]-N1.Nombre[i-diff];
 			else {
-				Result.Nombre[i] = this.Nombre[i] + 10000000 -N1.Nombre[i-diff] ;
+				Result.Nombre[i] = this.Nombre[i] + 1000000000 -N1.Nombre[i-diff] ;
 				N1.Nombre[i-diff-1] = N1.Nombre[i-diff-1] - 1;
 		
 			}

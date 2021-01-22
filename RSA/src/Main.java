@@ -58,10 +58,10 @@ public class Main {
 				  System.out.println();
 				  
 				  System.out.print("N1 + N2 = ");
-				  long lStartTime = System.nanoTime();
+				 // long lStartTime = System.nanoTime();
 				  System.out.print(N11.addition(N12).affichage());
-				  long lEndTime = System.nanoTime();
-				  System.out.println("Elapsed time in milliseconds: " + ( lEndTime - lStartTime )/1000000);
+				 // long lEndTime = System.nanoTime();
+				  //System.out.println("Elapsed time in milliseconds: " + ( lEndTime - lStartTime )/1000000);
 				  System.out.print(" / "+N11.addition(N12).affichage().length());
 				  System.out.println();
 				
@@ -123,8 +123,12 @@ public class Main {
 				  System.out.println();
 				  
 				  System.out.print("N1 * N2 = ");
-				  
+				  long lStartTime = System.nanoTime();
 				  System.out.print(N31.multiplication(N32).affichage());
+				  long lEndTime = System.nanoTime();
+				  System.out.println();
+				  System.out.println("Elapsed time in milliseconds: " + ( lEndTime - lStartTime )/1000000);
+				 
 				
 				  System.out.println();
 				 // System.out.print(" / "+N31.multiplication(N32).affichage().length());
